@@ -1,0 +1,69 @@
+@charset "UTF-8";
+.regulation {
+  max-width: 1220px;
+  margin: 0 auto;
+  padding: 0 50px;
+  font-family: "Geometria", Tahoma, sans-serif;
+  font-size: 16px; }
+
+.regulation__title {
+  font-size: 35px;
+  line-height: 1.15;
+  color: #000000;
+  font-weight: 900;
+  font-family: "Geometria", Tahoma, sans-serif;
+  margin: 0;
+  margin-bottom: 50px; }
+
+.regulation__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-bottom: 20px; }
+  .regulation__list--marker .regulation__item {
+    padding-left: 30px;
+    position: relative; }
+    .regulation__list--marker .regulation__item::before {
+      content: '—';
+      position: absolute;
+      top: 0;
+      left: 10px; }
+  .regulation__list--numeration {
+    padding-left: 15px; }
+
+.regulation__item {
+  line-height: 1.55;
+  margin-bottom: 5px; }
+  .regulation__item:last-child {
+    margin-bottom: 0; }
+
+.regulation__caption {
+  display: block;
+  font-size: 18px;
+  text-decoration: underline;
+  margin-bottom: 20px; }
+
+.regulation__text {
+  margin: 0;
+  line-height: 1.55;
+  margin-bottom: 20px; }
+
+@media screen and (max-width: 767px) {
+  .regulation {
+    font-size: 14px; }
+  .regulation__title {
+    font-size: 30px; }
+  .regulation__caption {
+    font-size: 16px; } }
+
+@media screen and (max-width: 600px) {
+  .regulation {
+    padding: 0 20px; } }
+
+@media screen and (max-width: 420px) {
+  .regulation {
+    font-size: 12px; }
+  .regulation__title {
+    font-size: 24px; }
+  .regulation__caption {
+    font-size: 14px; } }

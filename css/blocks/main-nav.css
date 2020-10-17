@@ -1,0 +1,82 @@
+.main-nav__wrapper {
+  max-width: 1220px;
+  margin: 0 auto;
+  padding: 0 50px; }
+
+.main-nav {
+  background-color: #4c4c4c;
+  width: 100%; }
+
+.main-nav__logo {
+  display: none; }
+
+.main-nav__close {
+  width: 40px;
+  height: 40px;
+  background: red;
+  display: none;
+  border: none;
+  position: absolute;
+  right: 5px;
+  top: 5px; }
+
+.main-nav__text {
+  display: none;
+  font-size: 13px;
+  font-family: "Geometria", Tahoma, sans-serif;
+  line-height: 1.55; }
+
+.main-nav__social {
+  padding-left: 0;
+  display: none;
+  align-items: center;
+  justify-content: space-between;
+  width: 120px;
+  margin: 0; }
+  .main-nav__social .social__item {
+    margin: 0; }
+
+@media screen and (max-width: 920px) {
+  .main-nav--closed .main-nav__wrapper {
+    display: none;
+    position: relative; }
+  .main-nav__social {
+    display: flex; }
+  .main-nav__logo {
+    display: block; }
+  .main-nav__text {
+    display: block;
+    margin: 0;
+    margin-top: auto;
+    margin-bottom: 25px; }
+  .main-nav--opened {
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 270px;
+    height: 100%;
+    padding: 40px;
+    padding-top: 50px;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    z-index: 5; }
+    .main-nav--opened .main-nav__wrapper {
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      height: 100%; }
+    .main-nav--opened .site-list__link {
+      font-size: 15px;
+      color: #000000;
+      font-weight: 400; }
+      .main-nav--opened .site-list__link:last-child {
+        margin-bottom: 0; }
+    .main-nav--opened .site-list__item {
+      margin-bottom: 15px; }
+    .main-nav--opened .main-nav__list {
+      flex-direction: column;
+      padding: 0; }
+    .main-nav--opened .main-nav__logo {
+      margin-bottom: 25px; }
+  .main-nav__close {
+    display: block; } }

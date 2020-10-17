@@ -1,0 +1,33 @@
+<form class="calculator__form calc-form" action="https://echo.htmlacademy.ru/" method="post" id="calculator">
+    <p class="calc-form__field calc-form__field--top">
+        <label class="calc-form__label" for="calc-form-starting-point">
+            <input class="calc-form__input" type="text" name="starting-point" id="calc-form-starting-point" placeholder="Откуда">
+        </label>
+    </p>
+    <p class="calc-form__field calc-form__field--top">
+        <label class="calc-form__label" for="calc-form-end-point">
+            <input class="calc-form__input" type="text" name="end-point" id="calc-form-end-point" placeholder="Куда">
+        </label>
+    </p>
+    <p class="calc-form__field calc-form__field--bottom">
+        <label class="calc-form__label" for="calc-form-weight-cargo">
+            <input class="calc-form__input" type="text" name="weight-cargo" id="calc-form-weight-cargo" placeholder="Масса КГ">
+        </label>
+    </p>
+    <p class="calc-form__field calc-form__field--bottom">
+        <label class="calc-form__label" for="calc-form-volume-cargo">
+            <input class="calc-form__input" type="text" name="volume-cargo" id="calc-form-volume-cargo" placeholder="Объем м3">
+        </label>
+    </p>
+    <p class="calc-form__field calc-form__field--bottom">
+        <select class="calc-form__select" name="type-packaging">
+            <option value="mat">Жесткая упаковка (Обрешетка)</option>
+            <option value="glossy">Стрейч-пленка</option>
+            <option value="satin">Паллетный борт</option>
+            <option value="fabric">Security pack</option>
+        </select>
+    </p>
+    <div class="calc-form__total-cost">
+        Примерная стоимость: <span class="total"></span>
+    </div>
+</form>
